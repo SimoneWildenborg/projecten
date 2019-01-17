@@ -1,9 +1,9 @@
 <?php
 class car
 {
-    private $name;
-    private $color;
-    private $weight;
+    public $name;
+    public $color;
+    public $weight;
     
     function __construct($pname, $pcolor, $pweight)
     {
@@ -11,35 +11,27 @@ class car
         $this->color = $pcolor;
         $this->weight = $pweight;
     }
-
-    public function giveCarName()
-    {
-        return $this->name;
-    }    
-    public function giveCarColor()
-    {
-        return $this->color;
-    }  
-    public function giveCarWeight()
-    {
-        return $this->weight;
-    }  
-        
+            
 }
 
 $renault = new car("Renault", "Black", 3000);
-echo $renault->giveCarName() . " " . $renault->giveCarColor() . " " . $renault->giveCarWeight();
-
-echo "<BR>";
-
+$volvo = new car("Volvo", "Red", 2400);
 $bmw = new car("BMW", "Green", 4000);
-echo $bmw->giveCarName() . " " . $bmw->giveCarColor() . " " . $bmw->giveCarWeight();
+$vroom = new raceauto("Bugatti", "Red", 3500, "TXS-8B");
 
-echo "<BR>";
+$autos = array($renault, $volvo, $bmw, $vroom);
+
+foreach($autos as $auto){
+    echo $auto->name . " " . $auto->color . " " . $auto->weight;
+    if ($auto instanceof raceauto) {
+        echo  " " . $auto->turbo;
+    }
+    echo "<BR>";
+    }
 
 class raceauto extends car
 {
-    private $turbo;
+    public $turbo;
     
     function __construct($pname, $pcolor, $pweight, $pturbo)
     {
@@ -51,10 +43,5 @@ class raceauto extends car
         return $this->turbo;
     }
 }
-
-$vroom = new raceauto("Bugatti", "Red", 3500, "TXS-8B");
-echo $vroom->giveCarName() . " " . $vroom->giveCarColor() . " " . $vroom->giveCarWeight() . " " . $vroom->giveCarTurbo();
-
-
 
 ?>
