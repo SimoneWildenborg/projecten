@@ -1,9 +1,16 @@
+<head>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
 
-<form>
-<input name="naamfilter" placeholder="Zoek naar">
-<input type="submit" value="filter">
+
+
+
+<form class="prodfilter">
+<input class="zoek" name="naamfilter" placeholder=" Zoek naar">
+<input class="subm" type="submit" value="filter">
 </form>
-
+<BR><BR>
 
 <?php
 if (isset($_GET['naamfilter']))

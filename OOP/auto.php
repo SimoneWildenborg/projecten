@@ -38,10 +38,7 @@ class raceauto extends car
         parent::__construct($pname, $pcolor, $pweight);
         $this->turbo = $pturbo;
     }
-    public function giveCarTurbo()
-    {
-        return $this->turbo;
-    }
+    
 }
 
 ?>

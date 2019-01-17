@@ -1,0 +1,78 @@
+body{
+    background-color: #fcdbb3;
+    color: black;
+}
+
+/* navbar*/
+
+#navbarTogglerDemo01{
+    height: 100px;
+    color: black;
+}
+
+h1{
+    color: #fabb68;
+    letter-spacing: 20px;
+    margin-left: 50px;
+    font-family:'Oleo Script', cursive;
+    font-size: 90px;
+    font-weight: 900;
+    text-shadow: 2px 2px 2px black;
+    margin-right: 80px;
+}
+
+.name > p{
+    letter-spacing: 3px;
+    margin-left: 55px;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: Lato, sans-serif;
+    color: #000;
+    text-shadow: 1px 1px 1px #fabb68;
+}
+
+.nav-link{
+    color: #f88e04;
+    font-size:20px;
+    font-weight: 700;
+}
+
+.banaan{
+    float: right;
+    padding: 5px:
+}
+/*footer*/
+
+footer{
+    height: 80px;
+    background: #11c79e;
+}
+.footext{
+font-size: 10px;
+text-align: center;
+}
+
+.prodlist{
+    margin-left: 100px;
+    font-weight: 700;
+    text-shadow: 2px 2px 2px #fabb68;
+}
+/* zoekfilter*/
+.prodfilter{
+    float: right;
+    width: 350px;
+    height: 50px;
+}
+.subm{
+    width: 100px;
+    height: 40px;
+    background: #11c79e;
+    border:2px solid #fabb68;
+    margin-right: 30px;
+}
+.zoek{
+    height: 39px;
+    border:2px solid #fabb68;
+}
+
+
