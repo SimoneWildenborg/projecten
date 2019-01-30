@@ -15,11 +15,12 @@ include("navbar.php");
 ?>
 
 <BR><BR>
-<h2>Alle bestellingen</h2>
-
 <?php
     include("toonbestellingen.php")
 ?>
+
+
+
 
 <footer>
     <p class="footext">Posted by: Simone Wildenborg</p>

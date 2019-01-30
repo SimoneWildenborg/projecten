@@ -17,6 +17,7 @@ catch(PDOException $e) {
     echo "Connection failed:" . $e->getMessage();
 }
 $conn = null;
+
 header("Location: index.php");
 ?>
 

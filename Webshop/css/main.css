@@ -1,5 +1,5 @@
 body{
-    background-color: #fcdbb3;
+    background-color:#fabb68;
     color: black;
 }
 
@@ -39,7 +39,7 @@ h1{
 
 .banaan{
     float: right;
-    padding: 5px:
+    padding: 5px;
 }
 /*footer*/
 
@@ -75,4 +75,12 @@ text-align: center;
     border:2px solid #fabb68;
 }
 
-
+.prodfilterr{
+    float: left;
+    width: 350px;
+    height: 50px;
+}
+.one{
+    height: 39px;
+    border:2px solid #fabb68;
+}

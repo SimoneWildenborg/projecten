@@ -26,15 +26,22 @@ $conn = new PDO ("mysql:host=localhost;dbname=webshopdb", "root", "");
 
 
 $stmt = $conn->query("SELECT * FROM producten WHERE naam LIKE '%$naamfilter%' ");
-while ($row = $stmt->fetch()){
-    echo "<LI>" . $row['naam'] . ":" . $row['prijs'];
-    echo "<a href='dbproductverwijderen.php?productid=" . $row['id'] . "'> verwijder</a>";
-    echo "<a href='productbewerken.php?productid=" . $row['id'] . "'>Wijzigen</a>";
-    echo "<a href='koopproduct.php?productid=" . $row['id'] . "'>Kopen</a>";
-    echo "</LI>";
-}
+
+echo "<table class='table'>";
+	while ($row = $stmt->fetch()) {
+    echo "<tr class='table-succes'>"; 
+    echo "<td>" . $row['naam'] . "</td><td>" . $row['prijs'] . "</td>";
+    echo "<td><a class='btn btn-danger btn-sm' href='dbproductverwijderen.php?productid=" . $row['id'] . "'>Verwijder</a></td> ";
+    echo "<td><a href='productbewerken.php?productid=" . $row['id'] . "'><button type='button' class='btn btn-primary  btn-sm'>Wijzigen</button></a></td>";
+    echo "<td><a href='koopproduct.php?productid=" . $row['id'] . "'><button type='button' class='btn btn-success  btn-sm'>Kopen</button></a></td>";
+    
+	echo "</tr>";
+  }	
+echo "</table>";
 
 $conn = null;
 
 
 ?>
+
+
