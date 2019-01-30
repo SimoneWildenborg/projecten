@@ -4,12 +4,13 @@
 </head>
 
 
+<div class="zoeker">
 
-
-<form class="prodfilter">
+<form >
 <input class="zoek" name="naamfilter" placeholder=" Zoek naar">
 <input class="subm" type="submit" value="filter">
 </form>
+</div>
 <BR><BR>
 
 <?php

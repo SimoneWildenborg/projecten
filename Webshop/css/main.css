@@ -12,8 +12,8 @@ body{
 
 h1{
     color: #fabb68;
-    letter-spacing: 20px;
-    margin-left: 50px;
+    letter-spacing: 16px;
+    margin-left: 30px;
     font-family:'Oleo Script', cursive;
     font-size: 90px;
     font-weight: 900;
@@ -24,7 +24,7 @@ h1{
 .name > p{
     letter-spacing: 3px;
     margin-left: 55px;
-    font-size: 15px;
+    font-size: 10px;
     font-weight: 600;
     font-family: Lato, sans-serif;
     color: #000;
@@ -53,16 +53,12 @@ text-align: center;
 }
 
 .prodlist{
-    margin-left: 100px;
+    padding-left: 100px;
     font-weight: 700;
     text-shadow: 2px 2px 2px #fabb68;
 }
 /* zoekfilter*/
-.prodfilter{
-    float: right;
-    width: 350px;
-    height: 50px;
-}
+
 .subm{
     width: 100px;
     height: 40px;
@@ -71,16 +67,15 @@ text-align: center;
     margin-right: 30px;
 }
 .zoek{
+    
     height: 39px;
+    border:2px solid #fabb68;
+}
+.zoeker{
+    
+    padding: 50px;
+    height: 50px;
+    width:500px;
     border:2px solid #fabb68;
 }
 
-.prodfilterr{
-    float: left;
-    width: 350px;
-    height: 50px;
-}
-.one{
-    height: 39px;
-    border:2px solid #fabb68;
-}

@@ -7,12 +7,26 @@
 </head>
 
 <body>
-<form action="dbproducttoevoegen.php" method="POST">
-  <input class="one" name= "productnaam" type="text" placeholder="Productnaam">
-  <input class="one" name= "productprijs" type="text" placeholder="Productprijs">
-  <button class="btn btn-success btn-m" type="submit">Voeg toe</button>
-</form>  
+  <div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="name">
+            <h1>Sim's Toko</h1><BR>
+            <p>Voeg product toe</p>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <img class="banaan" src="banaan.png" width="150"height="100" alt="">
+        </div>
+  </div>
+<BR>
+  <BR>
 
+  <div class="zoeker">
+    <form action="dbproducttoevoegen.php" method="POST">
+      <input class="zoek" name= "productnaam" type="text" placeholder="Productnaam">
+      <input class="zoek" name= "productprijs" type="text" placeholder="Productprijs">
+      <button class="btn btn-success btn-m" type="submit">Voeg toe</button>
+  </form>  
+</div>
 
 
 </body>

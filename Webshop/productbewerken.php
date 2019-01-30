@@ -36,13 +36,14 @@ include('navbar.php');
 <body>
 <BR>
 <BR>
-
-<form class="prodfilterr" action="dbproductupdate.php" method="POST">
+<div class="zoeker">
+<form  action="dbproductupdate.php" method="POST">
 <BR>
-    <input class="zoekr" name="productid" placeholder="Product id" value="<?php echo $productid ?>">
-    <input class="zoekr" name="productnaam" placeholder="Product naam" value="<?php echo $productnaam ?>">
-    <input class="zoekr" name="productprijs" placeholder="Product prijs" value="<?php echo $productprijs ?>"> 
+    <input class="zoek" name="productid" placeholder="Product id" value="<?php echo $productid ?>">
+    <input class="zoek" name="productnaam" placeholder="Product naam" value="<?php echo $productnaam ?>">
+    <input class="zoek" name="productprijs" placeholder="Product prijs" value="<?php echo $productprijs ?>"> 
     <button class="btn btn-success" type="submit">Pas aan</button>
 
 </form>
+</div>
 </body>
